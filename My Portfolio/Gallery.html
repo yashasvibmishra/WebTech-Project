@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="assets/css/main.css" />
+
+	<title>Yashasvi Baneswar Mishra's Site</title>
+</head>
+	<body>
+        
+        <div id="wrapper">
+
+            <!-- Banner -->
+            <section id="intro" class="main">
+                <span class="icon fa-diamond major"></span>
+                <h2>Travel Gallery</h2>
+                <p><strong> Some of my most prized posessions - my photographs! These were taken by me while I was on my sabbatical tour. Click on the images below to view in an enlarged format:</strong></p>
+
+            </section>
+       
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          margin: 0;
+          font-family: Arial;
+        }
+        
+        /* The grid: Four equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 25%;
+          padding: 10px;
+        }
+        
+        /* Style the images inside the grid */
+        .column img {
+          opacity: 0.8; 
+          cursor: pointer; 
+        }
+        
+        .column img:hover {
+          opacity: 1;
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* The expanding image container */
+        .container {
+          position: relative;
+          display: none;
+        }
+        
+        /* Expanding image text */
+        #imgtext {
+          position: absolute;
+          bottom: 15px;
+          left: 15px;
+          color: white;
+          font-size: 20px;
+        }
+        
+        /* Closable button inside the expanded image */
+        .closebtn {
+          position: absolute;
+          top: 10px;
+          right: 15px;
+          color: white;
+          font-size: 35px;
+          cursor: pointer;
+        }
+        </style>
+        </head>
+        <body>
+      
+        
+<!-- The four columns -->
+<div class="row">
+    <div class="column">
+      <img src="images/nature.jpg" alt="Applachian Woodlands" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images/snow.jpg" alt="Unnamed Peak, Chardonay" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images/mountains.jpg" alt="Banff National Park, Canada" style="width:100%" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img src="images/lights.jpg" alt="Aurora Borealis, Norway" style="width:100%" onclick="myFunction(this);">
+    </div>
+  </div>
+  
+        
+        <div class="container">
+          <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          <img id="expandedImg" style="width:100%">
+          <div id="imgtext"></div>
+        </div>
+        
+        <script>
+        function myFunction(imgs) {
+          var expandImg = document.getElementById("expandedImg");
+          var imgText = document.getElementById("imgtext");
+          expandImg.src = imgs.src;
+          imgText.innerHTML = imgs.alt;
+          expandImg.parentElement.style.display = "block";
+        }
+        </script>
+        
+
+
+
+
+   
+</body>
+</html>

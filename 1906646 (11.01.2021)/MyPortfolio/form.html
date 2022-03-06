@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/favicon.png" type="image/gif" sizes="16x16">
+    <title>Form</title>
+</head>
+
+<body bgcolor="#FFFFAA">
+    
+    <div align="center">
+        <h1><u>Please Fill the Form for me to get to know you better!</u></h1>
+    </div>
+    
+    <marquee bgcolor="#b197f7" scrollamount="7" behavior="alternate">All fields are mandatory.</marquee>
+    <marquee bgcolor="#f69a72" scrollamount="5">Please click on submit post form completion.</marquee>
+    
+    <div align="center">
+        <br>
+        <form name="my_form" action="" method="" data-netlify="true >
+            <label for="fname"><b>Full Name:</b></label><br>
+            <input type="text" id="fname" name="fname" size="30" placeholder="Enter name" required><br><br>
+            <input type="hidden" name="form-name" value="contact">
+            <label for="email"><b>Email:</b></label><br>
+            <input type="email" id="email" name="email" size="30" placeholder="Enter email" required><br><br>
+            
+            <label><b>Gender:</b></label><br><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+            
+            <label><b>Upload any cool picture of yours!:</b></label><br><br>
+            <input type="file" name="file_name" accept="image/*"><br><br>
+            
+            <textarea name="bio" id="bio" rows="4" cols="50">
+                Something else that you'd like to tell me that's not on your resume? Please share here
+            </textarea><br><br>
+            
+            <input type="submit" value="Submit">
+            <input type="reset">
+        </form>
+    </div>
+
+</body>
+
+</html>
